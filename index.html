@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/picture.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="leftside">
+            <div class="inputtext">
+                <h1>Lets write some inpirational quotes</h1>
+                <form>
+                    <input type="text" name="keyword" id="keyword" value="home sweet home">
+                    <input type="submit" name="submit" value="SUBMIT" id="submit" autofocus>
+                </form>
+            </div>
+            <div class="controls">
+                <button id="colorsId">Random Colors</button>
+                <button id="rotationId">Random Rotate</button>
+            </div>
+            <div class="frames">
+                <select id="dropdown">
+                    <option value="frame" selected>Frame</option>
+                    <option value="background">Background</option>
+                    <option value="tile">Tile</option>
+                    <option value="font" >Font</option>
+                </select>
+            </div>
+            <div class="colorstab"></div>
+        </div>
+        <div class="rightside">
+            <div class="picture"></div>
+            <button id="downloadimage">Download Image</button>
+        </div>
+    </div>
+    <script src="js/dom-to-image.js"></script>
+    <script src="js/picture.js"></script>
+</body>
+
+</html>

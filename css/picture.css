@@ -1,0 +1,252 @@
+/* background color
+background: rgb(34, 193, 195);
+background: -moz-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%); */
+
+
+/* Rules for sizing the icon. */
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+
+/* Rules for using icons as black on a light background. */
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+
+/* Rules for using icons as white on a dark background. */
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ///////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+
+.leftside {
+    display: grid;
+    height: 100vh;
+}
+
+.inputtext {
+    background-color: burlywood;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+
+.inputtext h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.inputtext form {
+    display: flex;
+}
+
+.inputtext input[name=keyword] {
+    width: 100%;
+    padding: .8rem;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 0 0 0 5px;
+    border-color: white;
+    text-transform: uppercase;
+}
+
+.inputtext input[name=keyword]:focus {
+    outline: none;
+    border-color: black;
+    transition: border-color .5s;
+}
+
+.inputtext input[type=submit] {
+    background-color: mediumslateblue;
+    color: white;
+    border: none;
+    padding: 0 1rem;
+}
+
+.inputtext input[type=submit]:hover {
+    background-color: rgb(97, 70, 250);
+}
+
+.inputtext input[type=submit]:focus {
+    background-color: rgb(97, 70, 250);
+    outline: none;
+}
+
+
+/* 2/3 gridcontrols */
+
+.controls {
+    margin: 0 .5rem .5rem .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+}
+
+.controls button {
+    padding: .7rem;
+    border: solid 0px;
+    border-radius: .2rem;
+    color: white;
+    background-color: mediumslateblue;
+}
+
+.controls button:hover {
+    background-color: rgb(97, 70, 250);
+}
+
+.controls button:focus {
+    background-color: rgb(58, 24, 245);
+}
+
+
+/* frames */
+
+.frames {
+    margin: 0 .5rem .5rem .5rem;
+}
+
+.frames select {
+    width: 100%;
+    padding: .7rem;
+    background-color: mediumslateblue;
+    color: white;
+    padding-left: 40%;
+}
+
+.frames select:hover {
+    background-color: rgb(97, 70, 250);
+}
+
+.frames select:focus {
+    background-color: rgb(97, 70, 250);
+}
+
+
+/* colorstab */
+
+.colorstab {
+    margin: 0 .5rem;
+    padding: 1rem;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 2fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-gap: 1rem;
+}
+
+.colorstab div {
+    width: 100%;
+    border: solid .5px;
+    padding: 2rem 0;
+}
+
+.colorstab div:hover {
+    outline: solid 2px;
+}
+
+.colorstab p {
+    text-align: center;
+    color: dark;
+}
+
+
+/* rightside */
+
+.rightside {
+    /* border: solid 5px red; */
+    padding: .5rem;
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+}
+
+.picture {
+    border: solid 1.5rem black;
+    outline: solid .3rem black;
+    outline-offset: -2rem;
+    padding: .5rem;
+}
+
+
+/* picture javascript */
+
+.picture {
+    display: grid;
+    align-items: center;
+}
+
+
+/* picture p javascript */
+
+.picture p {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+/* picture span javascript */
+
+.picture p span {
+    /* background-image: url(../Photos/wooden1-1.jpg); */
+    display: inline-block;
+    margin: 0.5rem;
+    padding: .4rem 1rem;
+    border: solid 0px;
+    border-radius: 10%;
+    font-weight: bolder;
+    box-shadow: 7px 7px grey;
+}
+
+.rightside button {
+    margin-top: .5rem;
+    padding: .5rem;
+    border: solid 0px;
+    border-radius: .2rem;
+    color: white;
+    background-color: mediumslateblue;
+}
+
+.picturewrapper button:hover {
+    background-color: rgb(97, 70, 250);
+}
